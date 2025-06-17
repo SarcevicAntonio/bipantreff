@@ -1,22 +1,17 @@
 <svelte:head>
+
 <title>Bi und Pan Treff</title>
+
 </svelte:head>
 
-# Bi und Pan Treff
+<div class="title">
+<img width="64" height="64" src="/favicon.png" alt="Ein Ring, jeweils zur hälfte in den Farben der Bi und Pan Flaggen">
+<h1>Bi und Pan Treff</h1>
+</div>
 
 Ein offener Treff in Münster für alle bi+, pan- und nicht monosexuellen Menschen und die, die sich fragen ob, sie sich damit identifizieren können.
 
-<div class="flags">
-
-![bi flag](/bi-flag.svg)
-![intersex-inclusive pride flag](/intersex-inclusive-pride-flag.svg)
-![pan flag](/pan-flag.svg)
-
-</div>
-
 Wir treffen uns einmal im Monat (3. oder 4. Dienstag) in der [a.cat](https://a-cat.ms), Herwarthstraße 7, 48143 Münster.
-
-Kontakt und weitere Infos unter bi.pan.treff@web.de
 
 Bestätigte Termine:
 
@@ -28,9 +23,4 @@ Bestätigte Termine:
 - 18.11.2025, 19:00
 - 16.12.2025, 19:00
 
-<style>
-.flags{
-display: grid;
-grid-template-rows: 1fr 1fr 1fr;
-}
-</style>
+Kontakt und weitere Infos unter bi.pan.treff@web.de
