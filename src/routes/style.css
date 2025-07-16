@@ -28,3 +28,8 @@ main {
 	gap: 1rem;
 	align-items: center;
 }
+
+.beepancake {
+	max-width: 100%;
+	height: auto;
+}
