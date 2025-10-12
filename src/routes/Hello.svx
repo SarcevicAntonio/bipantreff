@@ -1,0 +1,21 @@
+<script>
+	import bipancake from '$lib/assets/bipancake.png';
+</script>
+
+Ein offener Treff in Münster für alle bi+, pan- und nicht monosexuellen Menschen und die, die sich
+fragen ob, sie sich damit identifizieren können.
+
+<img
+	alt="Eine Zeichnung eines Tellers mit Pancakes einer Biene beschriftet mit Bi & Pan Treff. An der linken Seite schaut eine Katze um die Ecke beschriftet mit in der a.cat."
+	src={bipancake}
+/>
+
+Wir treffen uns einmal im Monat (3. oder 4. Dienstag) von 19-22Uhr in der [a.cat](https://a-cat.ms),
+Herwarthstraße 7, 48143 Münster. Das a.cat liegt in der Herwarthstraße 7, 100m vom Parkhaus
+Bahnhofsstraße entfernt. Vor Ort können Getränke gekauft werden, Wasser steht kostenlos zur
+Verfügung. Es können aber auch eigene Getränke und Speisen mitgebracht und verzehrt werden. Zahlung
+ist nur in bar möglich, bitte bedenkt das. Bis ca. 19:30 können alle Teilnehmenden erstmal ankommen.
+Dann gibt es eine kleine Vorstellungsrunde und wir sammeln Themen, falls Menschen welche mitgebracht
+haben. Danach teilen wir uns in kleinere Gesprächsrunden auf, wenn die Größe der Gruppe es erfordert
+oder das Bedürfnis danach besteht. Bei Fragen im Voraus könnt ihr eine Nachricht an
+bi.pan.treff@web.de schreiben
