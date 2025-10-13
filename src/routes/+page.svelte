@@ -47,6 +47,6 @@
 	}
 
 	li {
-		font-family: 'Courier New', Courier, monospace;
+		font-variant-numeric: tabular-nums;
 	}
 </style>
