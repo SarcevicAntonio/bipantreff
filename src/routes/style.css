@@ -23,14 +23,12 @@ main {
 	margin-inline: auto;
 }
 
-.title {
-	display: flex;
-	gap: 1rem;
-	align-items: center;
-}
-
 img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 2rem;
+}
+
+p {
+	line-height: 1.5;
 }

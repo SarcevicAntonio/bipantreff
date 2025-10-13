@@ -19,19 +19,33 @@
 
 <ul>
 	{#each data.termine as termin}
-		{@const date = new Date(termin)}
-		<li>
+		{@const date = new Date(new Date(termin).setHours(19))}
+		{@const endDate = new Date(new Date(termin).setHours(22))}
+		{#snippet date_label()}
 			{date.toLocaleDateString('de-DE', {
-				// weekday: 'long',
 				year: 'numeric',
 				month: '2-digit',
 				day: '2-digit'
 			})}
+		{/snippet}
+
+		<li>
+			{#if endDate.valueOf() < new Date().valueOf()}
+				<s> {@render date_label()}</s>
+			{:else}
+				{@render date_label()}
+			{/if}
 		</li>
 	{/each}
 </ul>
 
 <style>
+	.title {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+	}
+
 	li {
 		font-family: 'Courier New', Courier, monospace;
 	}
