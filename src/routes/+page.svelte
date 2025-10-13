@@ -49,4 +49,8 @@
 	li {
 		font-variant-numeric: tabular-nums;
 	}
+
+	s {
+		opacity: 0.6;
+	}
 </style>
