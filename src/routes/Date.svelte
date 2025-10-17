@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import CalendarDownload from '$lib/icons/CalendarDownload.svelte';
+	import CalendarFuture from '$lib/icons/CalendarFuture.svelte';
+	import CalendarPast from '$lib/icons/CalendarPast.svelte';
 	import ical, { ICalCalendarMethod } from 'ical-generator';
 	import { eventDetails } from '../ical';
-	import CalendarPast from '$lib/icons/CalendarPast.svelte';
 
 	let { date: dateString }: { date: string } = $props();
 
@@ -32,7 +33,7 @@
 <article>
 	{#if endTime.valueOf() < new Date().valueOf()}
 		<s>
-			{#if browser}<CalendarPast />{/if}
+			<CalendarPast />
 			{@render date_label()}
 		</s>
 	{:else}
@@ -44,6 +45,8 @@
 			>
 				<CalendarDownload />
 			</a>
+		{:else}
+			<CalendarFuture />
 		{/if}
 		{@render date_label()}
 	{/if}
