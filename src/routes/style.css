@@ -1,5 +1,7 @@
 :root {
 	color-scheme: light dark;
+
+	--link-height: 1.5rem;
 }
 
 body {
