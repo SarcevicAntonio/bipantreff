@@ -19,7 +19,7 @@
 	const blob = new Blob([calendar.toString()], { type: 'text/calendar' });
 </script>
 
-<a href={URL.createObjectURL(blob)} download="bi-pan-treff-a.cat-all.ics">
+<a href={URL.createObjectURL(blob)} download="bi-pan-treff-a.cat-till-{dates.at(-1)}.ics">
 	<CalendarDownload />
 	Alle bestätigten Termine als .ical Datei herunterladen
 </a>
