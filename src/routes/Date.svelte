@@ -21,11 +21,12 @@
 
 {#snippet date_label()}
 	<span>
-		{startTime.toLocaleDateString('de-DE', {
+		{startTime.toLocaleString('de-DE', {
 			weekday: 'short',
-			year: 'numeric',
+			year: '2-digit',
 			month: '2-digit',
-			day: '2-digit'
+			day: '2-digit',
+			hour: '2-digit'
 		})}
 	</span>
 {/snippet}
