@@ -1,5 +1,5 @@
-# Bi und Pan Treff Website Sourcecode
+# Bi und Pan Treff Website
 
-[bipan.netlify.app](https://bipan.netlify.app)
+Besuchen unter [bipan.ms](https://bipan.ms).
 
 [Änderungen Vorschlagen](https://github.com/SarcevicAntonio/bipantreff/edit/main/src/routes/Hello.svx)
