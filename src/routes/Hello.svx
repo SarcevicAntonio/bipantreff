@@ -2,8 +2,7 @@
 	import bipancake from '$lib/assets/bipancake.png';
 </script>
 
-Ein offener Treff in Münster für alle bi+, pan- und nicht monosexuellen Menschen und die, die sich
-fragen ob, sie sich damit identifizieren können.
+Ein offener Treff in Münster, der alle bi+, pan- und nicht monosexuellen Menschen und die, die sich unsicher sind willkommen heißt.
 
 <img
 	alt="Eine Zeichnung eines Tellers mit Pancakes einer Biene beschriftet mit Bi & Pan Treff. An der linken Seite schaut eine Katze um die Ecke beschriftet mit in der a.cat."
@@ -16,8 +15,7 @@ Bahnhofsstraße entfernt. Vor Ort können Getränke gekauft werden, Wasser steht
 Verfügung. Es können aber auch eigene Getränke und Speisen mitgebracht und verzehrt werden. Zahlung
 ist nur in bar möglich, bitte bedenkt das. Bis ca. 19:30 können alle Teilnehmenden erstmal ankommen.
 Dann gibt es eine kleine Vorstellungsrunde und wir sammeln Themen, falls Menschen welche mitgebracht
-haben. Danach teilen wir uns in kleinere Gesprächsrunden auf, wenn die Größe der Gruppe es erfordert
-oder das Bedürfnis danach besteht. Bei Fragen im Voraus könnt ihr eine Nachricht an
+haben. Die Themen reichen zb über Fragen zu Labels, Herausforderungen damit, Coming Out bis zur Repräsentation von bi+/pansexuellen Menschen in queeren und nicht queeren Räumen, Dating und vieles mehr. Danach teilen wir uns in kleinere Gesprächsrunden auf. Themenbasiert oder einfach zum offenen Austausch, wenn die Größe der Gruppe es erfordert oder das Bedürfnis danach besteht. Bei Fragen im Voraus könnt ihr eine Nachricht an
 info@bipan.ms schreiben.
 
 Für Hinweise zu Barrieren siehe [Barrieren in der Cat](https://a-cat.ms/barrieren-in-der-cat/) auf der a.cat website.
