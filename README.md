@@ -2,4 +2,4 @@
 
 [bipan.netlify.app](https://bipan.netlify.app)
 
-[Änderungen Vorschlagen](https://github.com/SarcevicAntonio/bipantreff/edit/main/src/routes/%2Bpage.svx)
+[Änderungen Vorschlagen](https://github.com/SarcevicAntonio/bipantreff/edit/main/src/routes/Hello.svx)
