@@ -1,12 +1,18 @@
-import rawTermine from '../../termine.txt?raw';
+import termine from '../../termine.txt?raw';
 export const prerender = true;
 
 export const load = () => {
 	return {
-		termine: rawTermine
-			.replaceAll('- ', '')
+		dates: termine
 			.split('\n')
-			.map((t) => t.trim())
+			.map((date) => date.trim())
 			.filter(Boolean)
+			.map((date) => {
+				const start = new Date(date);
+				start.setHours(19);
+				const end = new Date(date);
+				end.setHours(22);
+				return { string: date, start, end };
+			})
 	};
 };

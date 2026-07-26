@@ -1,13 +1,13 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-	import AllDates from './AllDates.svelte';
+	import bipancake from '$lib/assets/bipancake.png';
 	import Date from './Date.svelte';
-	import Hello from './Hello.svx';
+	import Description from './Description.svx';
+	import GetAllDates from './GetAllDates.svelte';
 
 	let { data } = $props();
 </script>
 
-<header class="title">
+<header>
 	<img
 		width="42"
 		height="42"
@@ -19,26 +19,48 @@
 
 <main>
 	<section>
-		<Hello></Hello>
+		<p>
+			Ein offener Treff in Münster, der alle bi+, pan- und nicht monosexuellen Menschen und die, die
+			sich unsicher sind willkommen heißt.
+		</p>
+
+		<img
+			alt="Eine Zeichnung eines Tellers mit Pancakes einer Biene beschriftet mit Bi & Pan Treff. An der linken Seite schaut eine Katze um die Ecke beschriftet mit in der a.cat."
+			src={bipancake}
+		/>
 	</section>
 
 	<section>
-		<h2>Bestätigte Termine:</h2>
+		<h2>Bestätigte Termine</h2>
 
-		{#each data.termine as date}
+		{#each data.dates as date}
 			<Date {date} />
+		{:else}
+			leider keine termine gefunden 😥
 		{/each}
 
-		{#if browser}
-			<AllDates dates={data.termine}></AllDates>
-		{/if}
+		<GetAllDates dates={data.dates}></GetAllDates>
+	</section>
+
+	<section>
+		<Description />
 	</section>
 </main>
 
 <style>
-	.title {
+	header,
+	main {
+		margin-inline: auto;
+		max-width: 60ch;
+	}
+
+	header {
 		display: flex;
 		gap: 1rem;
 		align-items: center;
+	}
+
+	main {
+		margin-bottom: 3rem;
 	}
 </style>

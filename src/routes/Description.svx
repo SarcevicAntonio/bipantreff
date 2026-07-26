@@ -1,13 +1,4 @@
-<script>
-	import bipancake from '$lib/assets/bipancake.png';
-</script>
-
-Ein offener Treff in Münster, der alle bi+, pan- und nicht monosexuellen Menschen und die, die sich unsicher sind willkommen heißt.
-
-<img
-	alt="Eine Zeichnung eines Tellers mit Pancakes einer Biene beschriftet mit Bi & Pan Treff. An der linken Seite schaut eine Katze um die Ecke beschriftet mit in der a.cat."
-	src={bipancake}
-/>
+## Beschreibung
 
 Wir treffen uns einmal im Monat (3. oder 4. Dienstag) von 19-22 Uhr in der [a.cat](https://a-cat.ms).
 Das a.cat liegt in der Herwarthstraße 7, 48143 Münster, ca. 100m vom Parkhaus Bahnhofsstraße entfernt.

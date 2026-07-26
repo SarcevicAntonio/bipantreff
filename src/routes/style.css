@@ -20,11 +20,6 @@ body {
 		sans-serif;
 }
 
-main {
-	max-width: 60ch;
-	margin-inline: auto;
-}
-
 img {
 	max-width: 100%;
 	height: auto;
