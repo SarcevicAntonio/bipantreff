@@ -1,16 +1,16 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
+	import { event_details, formatDate } from '$lib/dates';
 	import CalendarDownload from '$lib/icons/CalendarDownload.svelte';
 	import CalendarFuture from '$lib/icons/CalendarFuture.svelte';
 	import ical, { ICalCalendarMethod } from 'ical-generator';
-	import { eventDetails } from '../ical';
 	import type { PageData } from './$types';
 
 	let { date }: { date: PageData['dates'][number] } = $props();
 
 	const calendar = ical({ name: 'Bi und Pan Treff in der a.cat' });
 	calendar.method(ICalCalendarMethod.REQUEST);
-	calendar.createEvent({ ...date, ...eventDetails });
+	calendar.createEvent({ ...date, ...event_details });
 	const blob = new Blob([calendar.toString()], { type: 'text/calendar' });
 </script>
 
@@ -27,15 +27,7 @@
 		{:else}
 			<CalendarFuture />
 		{/if}
-		<span>
-			{date.start.toLocaleString('de-DE', {
-				weekday: 'short',
-				year: '2-digit',
-				month: '2-digit',
-				day: '2-digit',
-				hour: '2-digit'
-			})} (Beginn: 19:30)
-		</span>
+		<span>{formatDate(date.start)} (Beginn: 19:30)</span>
 	</article>
 {/if}
 
@@ -44,7 +36,6 @@
 		margin-block: 0.5rem;
 		display: flex;
 		align-items: center;
-		min-height: var(--link-height);
 		font-variant-numeric: tabular-nums;
 		gap: 0.5rem;
 	}

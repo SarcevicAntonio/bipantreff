@@ -1,15 +1,15 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
+	import { event_details } from '$lib/dates';
 	import CalendarDownload from '$lib/icons/CalendarDownload.svelte';
 	import ical, { ICalCalendarMethod } from 'ical-generator';
-	import { eventDetails } from '../ical';
 	import type { PageData } from './$types';
 
 	let { dates }: { dates: PageData['dates'] } = $props();
 
 	const calendar = ical({ name: 'Bi und Pan Treff in der a.cat' });
 	calendar.method(ICalCalendarMethod.REQUEST);
-	for (const date of dates) calendar.createEvent({ ...date, ...eventDetails });
+	for (const date of dates) calendar.createEvent({ ...date, ...event_details });
 	const blob = new Blob([calendar.toString()], { type: 'text/calendar' });
 </script>
 

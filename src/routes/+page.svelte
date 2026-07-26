@@ -1,6 +1,7 @@
 <script lang="ts">
 	import bipancake from '$lib/assets/bipancake.png';
-	import Date from './Date.svelte';
+	import { formatDate } from '$lib/dates';
+	import DateArticle from './DateArticle.svelte';
 	import Description from './Description.svx';
 	import GetAllDates from './GetAllDates.svelte';
 
@@ -25,6 +26,7 @@
 		</p>
 
 		<img
+			class="bipancake"
 			alt="Eine Zeichnung eines Tellers mit Pancakes einer Biene beschriftet mit Bi & Pan Treff. An der linken Seite schaut eine Katze um die Ecke beschriftet mit in der a.cat."
 			src={bipancake}
 		/>
@@ -34,7 +36,7 @@
 		<h2>Bestätigte Termine</h2>
 
 		{#each data.dates as date}
-			<Date {date} />
+			<DateArticle {date} />
 		{:else}
 			leider keine termine gefunden 😥
 		{/each}
@@ -43,7 +45,20 @@
 	</section>
 
 	<section>
+		<h2>Beschreibung</h2>
+
 		<Description />
+	</section>
+
+	<section>
+		<h2>Sonstiges</h2>
+
+		<ul>
+			<li>
+				Kreativtreff für Bi+Personen am {formatDate('2026-08-09 15:00')} in der a.cat, Herwarthstraße
+				7, 48143 Münster
+			</li>
+		</ul>
 	</section>
 </main>
 
@@ -62,5 +77,13 @@
 
 	main {
 		margin-bottom: 3rem;
+	}
+
+	h2 {
+		margin-block: 2rem 1rem;
+	}
+
+	.bipancake {
+		border-radius: 1.5rem;
 	}
 </style>

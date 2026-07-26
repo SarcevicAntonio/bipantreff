@@ -4,6 +4,13 @@
 	--link-height: 1.5rem;
 }
 
+html {
+	@supports (color: light-dark(#fff, #000)) {
+		background-color: light-dark(#edeae6, #211c18);
+		color: light-dark(#211c18, #edeae6);
+	}
+}
+
 body {
 	margin: 1rem;
 	font-family:
@@ -23,7 +30,6 @@ body {
 img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 2rem;
 }
 
 p {
