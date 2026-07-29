@@ -4,4 +4,4 @@ an diesem repo wird von [codeberg.org/linkplay-space/bipantreff](https://codeber
 
 Besuchen unter [bipan.ms](https://bipan.ms).
 
-[Änderungen vorschlagen](https://codeberg.org/linkplay-space/bipantreff/_edit/main/src/routes/Hello.svx)
+[Änderungen vorschlagen](https://codeberg.org/linkplay-space/bipantreff/_edit/main/src/routes/Description.svx)
