@@ -6,7 +6,8 @@
 
 	let { data } = $props();
 
-	const more_dates = $derived(data.dates.slice(5));
+	const DATES_ABOVE_FOLD = 5;
+	const more_dates = $derived(data.dates.slice(DATES_ABOVE_FOLD));
 </script>
 
 <header>
@@ -36,7 +37,7 @@
 	<section>
 		<h2>Bestätigte Termine</h2>
 
-		{#each data.dates.slice(0, 5) as date}
+		{#each data.dates.slice(0, DATES_ABOVE_FOLD) as date}
 			<DateArticle {date} />
 		{:else}
 			leider keine termine gefunden 😥
