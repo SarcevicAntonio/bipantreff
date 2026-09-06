@@ -1,11 +1,12 @@
 <script lang="ts">
 	import bipancake from '$lib/assets/bipancake.png';
-	import { formatDate } from '$lib/dates';
 	import DateArticle from './DateArticle.svelte';
 	import Description from './Description.svx';
 	import GetAllDates from './GetAllDates.svelte';
 
 	let { data } = $props();
+
+	const more_dates = $derived(data.dates.slice(5));
 </script>
 
 <header>
@@ -27,7 +28,7 @@
 
 		<img
 			class="bipancake"
-			alt="Eine Zeichnung eines Tellers mit Pancakes einer Biene beschriftet mit Bi & Pan Treff. An der linken Seite schaut eine Katze um die Ecke beschriftet mit in der a.cat."
+			alt="Eine Zeichnung eines Tellers mit Pancakes und einer Biene beschriftet mit 'Bi & Pan Treff'. An der linken Seite schaut eine Katze um die Ecke beschriftet mit 'in der a.cat'."
 			src={bipancake}
 		/>
 	</section>
@@ -35,13 +36,23 @@
 	<section>
 		<h2>Bestätigte Termine</h2>
 
-		{#each data.dates as date}
+		{#each data.dates.slice(0, 5) as date}
 			<DateArticle {date} />
 		{:else}
 			leider keine termine gefunden 😥
 		{/each}
 
-		<GetAllDates dates={data.dates}></GetAllDates>
+		{#if more_dates.length}
+			<details>
+				<summary>Weitere Termine</summary>
+				{#each more_dates as date}
+					<DateArticle {date} />
+				{/each}
+				<GetAllDates dates={data.dates} />
+			</details>
+		{:else}
+			<GetAllDates dates={data.dates} />
+		{/if}
 	</section>
 
 	<section>
@@ -50,7 +61,7 @@
 		<Description />
 	</section>
 
-    <!--
+	<!--
     <section>
 		<h2>Sonstiges</h2>
 
