@@ -50,7 +50,8 @@
 		<Description />
 	</section>
 
-	<section>
+    <!--
+    <section>
 		<h2>Sonstiges</h2>
 
 		<ul>
@@ -60,6 +61,7 @@
 			</li>
 		</ul>
 	</section>
+    -->
 </main>
 
 <style>
